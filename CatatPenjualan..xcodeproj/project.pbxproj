@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08731D0E29BEBD46001FE502 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08731D0D29BEBD46001FE502 /* DashboardView.swift */; };
+		08731D1029BEC60B001FE502 /* ScrollDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08731D0F29BEC60B001FE502 /* ScrollDataView.swift */; };
+		08731D1329BF2F2B001FE502 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08731D1229BF2F2B001FE502 /* DataController.swift */; };
+		08731D1529BF4530001FE502 /* AddDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08731D1429BF4530001FE502 /* AddDataView.swift */; };
+		08825BD329BEB60300107A7D /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08825BD129BEB60300107A7D /* Database.xcdatamodeld */; };
 		088DCACE29BC87C6006F363C /* CatatPenjualan_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088DCACD29BC87C6006F363C /* CatatPenjualan_App.swift */; };
 		088DCAD029BC87C6006F363C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088DCACF29BC87C6006F363C /* ContentView.swift */; };
 		088DCAD229BC87C8006F363C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088DCAD129BC87C8006F363C /* Assets.xcassets */; };
@@ -14,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08731D0D29BEBD46001FE502 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		08731D0F29BEC60B001FE502 /* ScrollDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDataView.swift; sourceTree = "<group>"; };
+		08731D1229BF2F2B001FE502 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		08731D1429BF4530001FE502 /* AddDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataView.swift; sourceTree = "<group>"; };
+		08731D1629BF72D1001FE502 /* CatatPenjualan--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CatatPenjualan--Info.plist"; sourceTree = SOURCE_ROOT; };
+		08825BD229BEB60300107A7D /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		088DCACA29BC87C6006F363C /* CatatPenjualan..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatatPenjualan..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088DCACD29BC87C6006F363C /* CatatPenjualan_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatatPenjualan_App.swift; sourceTree = "<group>"; };
 		088DCACF29BC87C6006F363C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08731D0C29BEBD12001FE502 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08731D0D29BEBD46001FE502 /* DashboardView.swift */,
+				08731D0F29BEC60B001FE502 /* ScrollDataView.swift */,
+				08731D1429BF4530001FE502 /* AddDataView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08731D1129BF0D3B001FE502 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				08731D1229BF2F2B001FE502 /* DataController.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
 		088DCAC129BC87C6006F363C = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +80,14 @@
 		088DCACC29BC87C6006F363C /* CatatPenjualan. */ = {
 			isa = PBXGroup;
 			children = (
+				08731D1629BF72D1001FE502 /* CatatPenjualan--Info.plist */,
+				08731D1129BF0D3B001FE502 /* Connection */,
+				08731D0C29BEBD12001FE502 /* Views */,
 				088DCACD29BC87C6006F363C /* CatatPenjualan_App.swift */,
 				088DCACF29BC87C6006F363C /* ContentView.swift */,
 				088DCAD129BC87C8006F363C /* Assets.xcassets */,
 				088DCAD329BC87C8006F363C /* Preview Content */,
+				08825BD129BEB60300107A7D /* Database.xcdatamodeld */,
 			);
 			path = CatatPenjualan.;
 			sourceTree = "<group>";
@@ -137,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08731D1029BEC60B001FE502 /* ScrollDataView.swift in Sources */,
+				08731D1329BF2F2B001FE502 /* DataController.swift in Sources */,
 				088DCAD029BC87C6006F363C /* ContentView.swift in Sources */,
+				08731D0E29BEBD46001FE502 /* DashboardView.swift in Sources */,
+				08825BD329BEB60300107A7D /* Database.xcdatamodeld in Sources */,
 				088DCACE29BC87C6006F363C /* CatatPenjualan_App.swift in Sources */,
+				08731D1529BF4530001FE502 /* AddDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +308,7 @@
 				DEVELOPMENT_TEAM = P8794RMH4C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CatatPenjualan--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +338,7 @@
 				DEVELOPMENT_TEAM = P8794RMH4C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CatatPenjualan--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +379,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08825BD129BEB60300107A7D /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08825BD229BEB60300107A7D /* Database.xcdatamodel */,
+			);
+			currentVersion = 08825BD229BEB60300107A7D /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 088DCAC229BC87C6006F363C /* Project object */;
 }
