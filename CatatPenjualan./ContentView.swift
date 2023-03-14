@@ -41,7 +41,7 @@ struct ContentView: View {
                         .padding(.all, geometry.size.width * 0.05)
                         .padding(.top, geometry.size.height * 0.05)
                         
-                        Text("Total Data")
+                        Text("Dashboard Data")
                             .padding(.all, geometry.size.width * 0.05)
                             .padding(.top, geometry.size.height * 0.15)
                             .foregroundColor(.white)
