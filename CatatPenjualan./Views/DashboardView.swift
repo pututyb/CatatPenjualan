@@ -33,7 +33,7 @@ struct DashboardView: View {
                 Spacer()
                 Group {
                     VStack(alignment: .leading) {
-                        Text("Total Nama")
+                        Text("Total Produk")
                             .font(.system(size: 10, weight: .light))
                         Text("\(totalNama)")
                             .font(.system(size: 12, weight: .semibold))
