@@ -37,6 +37,7 @@ struct ScrollDataView: View {
             }
             .onDelete(perform: deleteCatatan)
         }
+        .preferredColorScheme(.light)
     }
     
     func deleteCatatan(at offsets: IndexSet) {
