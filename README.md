@@ -1,4 +1,4 @@
-# CatatPenjualan
+# CatatPenjualan CoreData
 Aplikasi untuk mencatatat penjualan. with Core Data.
 
 
