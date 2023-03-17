@@ -81,10 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				08731D1629BF72D1001FE502 /* CatatPenjualan--Info.plist */,
-				08731D1129BF0D3B001FE502 /* Connection */,
-				08731D0C29BEBD12001FE502 /* Views */,
 				088DCACD29BC87C6006F363C /* CatatPenjualan_App.swift */,
 				088DCACF29BC87C6006F363C /* ContentView.swift */,
+				08731D1129BF0D3B001FE502 /* Connection */,
+				08731D0C29BEBD12001FE502 /* Views */,
 				088DCAD129BC87C8006F363C /* Assets.xcassets */,
 				088DCAD329BC87C8006F363C /* Preview Content */,
 				08825BD129BEB60300107A7D /* Database.xcdatamodeld */,
