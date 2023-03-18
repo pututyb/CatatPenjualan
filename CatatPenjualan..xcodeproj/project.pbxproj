@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083DD3F729C5596B00EBCD2C /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083DD3F629C5596B00EBCD2C /* EditView.swift */; };
 		08731D0E29BEBD46001FE502 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08731D0D29BEBD46001FE502 /* DashboardView.swift */; };
 		08731D1029BEC60B001FE502 /* ScrollDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08731D0F29BEC60B001FE502 /* ScrollDataView.swift */; };
 		08731D1329BF2F2B001FE502 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08731D1229BF2F2B001FE502 /* DataController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		083DD3F629C5596B00EBCD2C /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		08731D0D29BEBD46001FE502 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		08731D0F29BEC60B001FE502 /* ScrollDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDataView.swift; sourceTree = "<group>"; };
 		08731D1229BF2F2B001FE502 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 				08731D0D29BEBD46001FE502 /* DashboardView.swift */,
 				08731D0F29BEC60B001FE502 /* ScrollDataView.swift */,
 				08731D1429BF4530001FE502 /* AddDataView.swift */,
+				083DD3F629C5596B00EBCD2C /* EditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -80,6 +83,7 @@
 		088DCACC29BC87C6006F363C /* CatatPenjualan. */ = {
 			isa = PBXGroup;
 			children = (
+				08825BD129BEB60300107A7D /* Database.xcdatamodeld */,
 				08731D1629BF72D1001FE502 /* CatatPenjualan--Info.plist */,
 				088DCACD29BC87C6006F363C /* CatatPenjualan_App.swift */,
 				088DCACF29BC87C6006F363C /* ContentView.swift */,
@@ -87,7 +91,6 @@
 				08731D0C29BEBD12001FE502 /* Views */,
 				088DCAD129BC87C8006F363C /* Assets.xcassets */,
 				088DCAD329BC87C8006F363C /* Preview Content */,
-				08825BD129BEB60300107A7D /* Database.xcdatamodeld */,
 			);
 			path = CatatPenjualan.;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				08731D1029BEC60B001FE502 /* ScrollDataView.swift in Sources */,
 				08731D1329BF2F2B001FE502 /* DataController.swift in Sources */,
+				083DD3F729C5596B00EBCD2C /* EditView.swift in Sources */,
 				088DCAD029BC87C6006F363C /* ContentView.swift in Sources */,
 				08731D0E29BEBD46001FE502 /* DashboardView.swift in Sources */,
 				08825BD329BEB60300107A7D /* Database.xcdatamodeld in Sources */,

@@ -32,20 +32,22 @@ struct ScrollDataView: View {
                 .background(.white)
             List {
                 ForEach(catatan.filter { predicate.evaluate(with: $0)}, id: \.self) { item in
-                    HStack {
-                        Text(item.nama ?? "Uknown Item")
-                            .font(.system(size: 14, weight: .medium))
-                        Spacer()
-                        VStack(alignment: .leading) {
-                            Text("\(item.jumlah) Pcs")
+                    NavigationLink(destination: EditView(catatan: item)) {
+                        HStack {
+                            Text(item.nama ?? "Uknown Item")
                                 .font(.system(size: 14, weight: .medium))
-                            
-                            Text("Rp.\(item.harga)")
-                                .font(.system(size: 12, weight: .medium))
-                                .foregroundColor(item.harga > 0 ? .green : .red)
+                            Spacer()
+                            VStack(alignment: .leading) {
+                                Text("\(item.jumlah) Pcs")
+                                    .font(.system(size: 14, weight: .medium))
+                                
+                                Text("Rp.\(item.harga)")
+                                    .font(.system(size: 12, weight: .medium))
+                                    .foregroundColor(item.harga > 0 ? .green : .red)
+                            }
                         }
+                        .padding()
                     }
-                    .padding()
                 }
                 .onDelete(perform: deleteCatatan)
             }
