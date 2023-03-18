@@ -26,26 +26,31 @@ struct EditView: View {
     }
     
     var body: some View {
-        VStack {
-            TextField("Nama Produk", text: $nama)
-                .padding()
-            
-            TextField("Jumlah Produk", value: $jumlah, formatter: NumberFormatter())
-                .padding()
-            
-            TextField("Total Pendapatan", value: $harga, formatter: NumberFormatter())
-                .padding()
-            
-            Button("Update") {
-                catatan.nama = nama
-                catatan.jumlah = Int32(jumlah)
-                catatan.harga = Int32(harga)
+        NavigationView {
+            Form {
+                Section {
+                    TextField("Nama Produk", text: $nama)
+                }
                 
-                try? db.save()
-                dismiss()
+                Section {
+                    TextField("Jumlah Produk", value: $jumlah, formatter: NumberFormatter())
+                }
+                
+                Section {
+                    TextField("Total Pendapatan", value: $harga, formatter: NumberFormatter())
+                }
+                
+                Button("Update") {
+                    catatan.nama = nama
+                    catatan.jumlah = Int32(jumlah)
+                    catatan.harga = Int32(harga)
+                    
+                    try? db.save()
+                    dismiss()
+                }
             }
+            .navigationTitle("Edit Produk")
         }
-        .navigationTitle("Edit Produk")
     }
 }
 
